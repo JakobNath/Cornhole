@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cornerstone Cornhole League stats</title>
+<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#06162a;color:#f4efe2;font:16px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;padding:20px;box-sizing:border-box}b{color:#e3ad2c;font:800 20px Georgia,serif}</style></head>
+<body><div id="m"><b>Cornerstone Cornhole League</b><p>Loading stats…</p></div><script>
+fetch("https://script.google.com/macros/s/AKfycbzNyFK1nKv8ytlOrWPjzq9FBeU5cGctKL9IW0qyA0eF_8pjXYxJkm6MjJEoFvdqZ3I2Wg/exec?page=raw",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.text()}).then(function(h){if(!/<html/i.test(h))throw 0;document.open();document.write(h);document.close()})
+.catch(function(){document.getElementById("m").innerHTML="<b>Cornerstone Cornhole League</b><p>The stats couldn't load right now. Check your connection and try again in a minute.</p>"});
+</script></body></html>
